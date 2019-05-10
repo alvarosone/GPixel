@@ -10,7 +10,17 @@
     <RelativeLayout
         android:id="@+id/rlBuscador"
         android:layout_width="match_parent"
-        android:layout_height="80dp" />
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/search" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rlMenu"
@@ -19,6 +29,42 @@
         android:layout_alignParentBottom="true"
         android:clipToPadding="false"
         android:fadingEdgeLength="10dp">
+
+        <ImageView
+            android:id="@+id/btnDiscover"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/discover" />
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginRight="81dp"
+            android:layout_toStartOf="@+id/imageView5"
+            android:layout_toLeftOf="@+id/imageView5"
+            android:layout_toEndOf="@+id/btnDiscover"
+            android:layout_toRightOf="@+id/btnDiscover"
+            android:foregroundGravity="center|center_horizontal"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            app:srcCompat="@drawable/user" />
 
     </RelativeLayout>
 
